@@ -19,7 +19,6 @@ function construirRespostaNTP(requestMessage) {
 
   // Preencher os campos de timestamp com o tempo atual
   const timestamp = Date.now();
-  console.log(`Timestamp atual: ${new Date(timestamp).toISOString()}`); // Adicione esta linha
 
   const seconds = Math.floor(timestamp / 1000) + 2208988800;
   const fraction = Math.floor((timestamp % 1000) / 1000 * Math.pow(2, 32));

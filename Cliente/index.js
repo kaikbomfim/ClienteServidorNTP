@@ -4,7 +4,7 @@ const dgram = require('dgram');
 const client = dgram.createSocket('udp4');
 
 // Configurações do servidor NTP
-const serverAddress = '127.0.0.1';
+const serverAddress = '127.0.0';
 const serverPort = 3000;
 
 // Função para construir o pacote NTP
